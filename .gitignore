@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+fr01_env/
+
+# Dataset
+data/raw/
+data/yolo_dataset/
+
+# Training outputs
+runs/
+
+# Reports
+reports/
+
+# OS files
+.DS_Store
+Thumbs.db
