@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FR-01 Implementation Guide
 ## Energy-Efficient Edge-Based Deep Learning Framework for Smart Agriculture
 
@@ -221,3 +222,7 @@ After running all 4 steps, include these in your presentation:
 | Phase 3 | FR-04 | Apply INT8 quantization with TensorRT or TFLite |
 | Phase 3 | FR-05 | Compare mAP vs energy across base/pruned/quantized models |
 | Phase 4 | FR-06 | Test model on augmented low-light/rainy/occluded images |
+=======
+# MajorProject-13
+Energy Efficient Deep-Learning based Computer Vision Framework for Smart Agriculture at the Edge.
+>>>>>>> b52f36347b6c954d31e8b62e59c3a8d397199308
