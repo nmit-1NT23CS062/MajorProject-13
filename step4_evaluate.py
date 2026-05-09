@@ -293,7 +293,7 @@ def write_final_report(val_results, speed_stats, report_dict, df_metrics, classe
 
     report_text = "\n".join(lines)
     report_path = REPORTS_DIR / "fr01_evaluation_report.txt"
-    report_path.write_text(report_text)
+    report_path.write_text(report_text, encoding="utf-8")
     print(report_text)
 
     # Also save machine-readable JSON

@@ -1,11 +1,8 @@
-# Python
-__pycache__/
-*.pyc
-
-# Virtual environment
+# Conda environments
+p11env/
 fr01_env/
 
-# Dataset
+# Datasets
 data/raw/
 data/yolo_dataset/
 
@@ -15,6 +12,6 @@ runs/
 # Reports
 reports/
 
-# OS files
-.DS_Store
-Thumbs.db
+# Python cache
+__pycache__/
+*.pyc
