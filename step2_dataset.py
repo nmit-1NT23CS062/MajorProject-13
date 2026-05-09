@@ -158,10 +158,16 @@ def perform_eda(df: pd.DataFrame, classes: list):
 
 def create_stratified_subset(df: pd.DataFrame):
     print(f"[3/6] Creating stratified {int(SUBSET_RATIO*100)}% subset...")
-    # Stratified sample per class
-    subset = df.groupby("class", group_keys=False).apply(
-        lambda x: x.sample(frac=SUBSET_RATIO, random_state=RANDOM_SEED)
-    ).reset_index(drop=True)
+
+    subsets = []
+
+    for cls in df["class"].unique():
+        cls_df = df[df["class"] == cls]
+        sampled = cls_df.sample(frac=SUBSET_RATIO, random_state=RANDOM_SEED)
+        subsets.append(sampled)
+
+    subset = pd.concat(subsets, ignore_index=True)
+
     print(f"      Subset size: {len(subset)} images (from {len(df)} total)")
     return subset
 
